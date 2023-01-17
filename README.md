@@ -1,3 +1,7 @@
+---
+typora-copy-images-to: ./Visualization.png
+---
+
 # <u>**Top Hit Songs Data Analysis & Visualization**</u>
 
 **by Chenglin Zhang, Yijia Xue, Yushan Gu**
@@ -44,4 +48,4 @@ The main function of this scraper can be found at **./billboard/billboard/spider
 
 The interactible visualization link for this project: https://public.tableau.com/app/profile/yijia.xue/viz/STATS401Project1/Dashboard1
 
-![Dashboard 1](/Users/ikea/Downloads/Dashboard 1.png)
+![Visualization](Visualization.png)
