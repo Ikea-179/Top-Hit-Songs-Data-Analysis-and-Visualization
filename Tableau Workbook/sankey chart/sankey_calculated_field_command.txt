@@ -1,0 +1,17 @@
+Left Proportion
+RUNNING_SUM(SUM([Count]))/TOTAL(SUM([Count]))
+
+Right Proportion
+RUNNING_SUM(SUM([Count]))/TOTAL(SUM([Count]))
+
+x
+(INDEX()-25)/4
+
+Curve
+1/(1+EXP(1)^-[x])
+
+y
+[Left Proportion] + ([Right Proportion] - [Left Proportion]) * [Curve]
+
+size
+RUNNING_AVG(SUM([Count]))

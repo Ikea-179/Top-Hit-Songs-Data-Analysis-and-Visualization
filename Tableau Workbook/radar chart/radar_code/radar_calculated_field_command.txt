@@ -1,0 +1,38 @@
+Path
+
+CASE [Attribute]
+WHEN 'Danceability' THEN 1
+WHEN 'Loudness' THEN 2
+WHEN 'Energy' THEN 3
+WHEN 'Speechiness' THEN 4
+WHEN 'Acousticness' THEN 5
+WHEN 'Liveness' THEN 6
+WHEN 'Valence' THEN 7
+ELSE 8
+END
+
+Radian
+
+IF [Path]=8 THEN PI()/2
+ELSE PI()/2 - ([Path]-1)*2*PI()/7
+END
+
+X
+
+[Value]*COS([Radian])
+
+Y
+
+[Value]*SIN([Radian])
+
+Conditional Label
+
+IF [Era] != 'RING1' 
+AND [Era] != 'RING2' 
+AND [Era] != 'RING3' 
+AND [Era] != 'RING4' 
+THEN [Value] END
+
+Conditional Attribute
+
+IF [Era] = 'RING4' AND [Attribute] != "Danceability0" THEN [Attribute] END
