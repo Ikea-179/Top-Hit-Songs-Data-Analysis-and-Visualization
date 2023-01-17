@@ -1,7 +1,3 @@
----
-typora-copy-images-to: ./Visualization.png
----
-
 # <u>**Top Hit Songs Data Analysis & Visualization**</u>
 
 **by Chenglin Zhang, Yijia Xue, Yushan Gu**
